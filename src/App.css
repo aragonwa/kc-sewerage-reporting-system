@@ -1,0 +1,28 @@
+.landing-page {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+#footer-social-bar, #global-nav, #sticky-footer, #footer-nav {
+  background-color: #3C7893;
+}
+
+#global-nav .nav > li > a:hover, #global-nav .nav > li > a:focus, #global-nav .nav .open > a, #global-nav .nav .open > a:hover, #global-nav .nav .open > a:focus {
+  background-color: #264D5E;
+}
+
+#global-nav li.dropdown.open .dropdown-menu a:hover, #global-nav li.dropdown.open .dropdown-menu a:active {
+  background-color: #264D5E;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  #global-nav li.dropdown.open .dropdown-menu a {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+}
+.dropdown-menu {
+  padding:0;
+}
+.navbar-brand {
+  padding-top: 8px;
+}
