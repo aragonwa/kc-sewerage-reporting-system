@@ -1,6 +1,6 @@
 ## Sewerage Reporting System
 
-Live demo [https://kc-sewerage.surge.sh/] (https://kc-sewerage.surge.sh/)
+Live demo [https://kc-sewerage.surge.sh/](https://kc-sewerage.surge.sh/)
 
 ## Available Scripts
 
