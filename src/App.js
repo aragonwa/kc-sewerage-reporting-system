@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import numeral from 'numeral';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {value:''};
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: numeral(event.target.value).format('0,0')})
+  }
   render() {
     return (
       <div className="landing-page">
@@ -28,6 +38,9 @@ class App extends Component {
             <button className="btn btn-primary">LOG OUT</button>
           </div>
         </div>
+        <h3>Masking example</h3>
+        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+        You typed: <code>{numeral(this.state.value).value()}</code>
       </div>
     );
   }
